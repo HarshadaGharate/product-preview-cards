@@ -41,12 +41,33 @@
     <img src="./images/1.webp" id="main-image">
 
     <div class="image-container">
-        <img src="./images/1.webp" id="product-img">
-        <img src="./images/2.webp" id="product-img">
-        <img src="./images/3.webp" id="product-img">
-        <img src="./images/4.webp" id="product-img">
-        <img src="./images/5.webp" id="product-img">
+        <img src="./images/1.webp" id="product-img" onclick="handleChange(1)">
+        <img src="./images/2.webp" id="product-img" onclick="handleChange(2)">
+        <img src="./images/3.webp" id="product-img" onclick="handleChange(3)">
+        <img src="./images/4.webp" id="product-img" onclick="handleChange(4)">
+        <img src="./images/5.webp" id="product-img" onclick="handleChange(5)">
     </div>
 
+    <script>
+        function handleChange(num){
+            const mainImage=document.getElementById("main-image")
+            if(num==1){
+                mainImage.src="./images/1.webp"
+            }
+            else if(num==2){
+                mainImage.src="./images/2.webp"
+            }
+            else if(num==3){
+                mainImage.src="./images/3.webp"
+            }
+            else if(num==4){
+                mainImage.src="./images/4.webp"
+            }
+            else if(num==5){
+                mainImage.src="./images/5.webp"
+            }
+
+        }
+    </script>
 </body>
 </html>
